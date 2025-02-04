@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    flex-direction: column;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 10px;
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.green { background: green; }
+.red { background: red; }
+.yellow { background: yellow; }
+.blue { background: blue; }
+.active {
+    opacity: 0.6;
+}
+#start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#score {
+    color: rebeccapurple;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#name {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
